@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<title>Kontaktkarte Hans Deutmeyer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hans Deutmeyer | Ergotherapie</title>
+<style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body {
+           font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+           background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 20px;
+       }
+       .card {
+           background: white;
+           max-width: 500px;
+           width: 100%;
+           padding: 40px 30px;
+           border-radius: 24px;
+           box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+           text-align: center;
+           transition: transform 0.3s ease;
+       }
+       .card:hover {
+           transform: translateY(-5px);
+       }
+       .name {
+           font-size: 2.5rem;
+           font-weight: 600;
+           color: #1e293b;
+           letter-spacing: -0.5px;
+           margin-bottom: 8px;
+       }
+       .profession {
+           font-size: 1.3rem;
+           color: #3b5e7a;
+           font-weight: 400;
+           margin-bottom: 30px;
+           padding-bottom: 20px;
+           border-bottom: 2px solid #e2e8f0;
+       }
+       .detail {
+           margin: 25px 0;
+           text-align: left;
+           background: #f8fafc;
+           padding: 20px;
+           border-radius: 18px;
+       }
+       .detail-item {
+           display: flex;
+           align-items: center;
+           margin: 15px 0;
+           font-size: 1.1rem;
+       }
+       .emoji {
+           font-size: 1.6rem;
+           margin-right: 15px;
+           min-width: 40px;
+           text-align: center;
+       }
+       .text {
+           color: #334155;
+           word-break: break-word;
+       }
+       .label {
+           font-weight: 600;
+           color: #1e293b;
+           margin-right: 8px;
+       }
+       .address {
+           line-height: 1.5;
+       }
+       .vcard-button {
+           display: inline-block;
+           background: #2c5f2d;
+           color: white;
+           text-decoration: none;
+           padding: 16px 32px;
+           border-radius: 50px;
+           font-size: 1.3rem;
+           font-weight: 600;
+           margin: 20px 0 10px;
+           box-shadow: 0 8px 16px -4px rgba(44, 95, 45, 0.3);
+           transition: background 0.2s, transform 0.1s;
+           border: none;
+           cursor: pointer;
+           width: 100%;
+       }
+       .vcard-button:hover {
+           background: #1e4620;
+           box-shadow: 0 10px 20px -4px rgba(44, 95, 45, 0.4);
+       }
+       .vcard-button:active {
+           transform: scale(0.98);
+       }
+       .hint {
+           color: #64748b;
+           font-size: 0.9rem;
+           margin-top: 20px;
+       }
+       @media (max-width: 480px) {
+           .card {
+               padding: 30px 20px;
+           }
+           .name {
+               font-size: 2rem;
+           }
+           .profession {
+               font-size: 1.1rem;
+           }
+       }
+</style>
 </head>
 <body>
-<h1>Kontaktkarte Hans Deutmeyer</h1>
-<p><a href="hans-deutmeyer.vcf">Kontakt als vCard herunterladen</a></p>
+<div class="card">
+<h1 class="name">Hans Deutmeyer</h1>
+<div class="profession">Ambulante Ergotherapie</div>
+<div class="detail">
+<div class="detail-item">
+<span class="emoji">📱</span>
+<span class="text"><span class="label">Mobil:</span> 0170 2013190</span>
+</div>
+<div class="detail-item">
+<span class="emoji">🏥</span>
+<span class="text"><span class="label">Praxis:</span> 05931 847694</span>
+</div>
+<div class="detail-item">
+<span class="emoji">✉️</span>
+<span class="text"><span class="label">E-Mail:</span> ergotherapie.deutmeyer@t-online.de</span>
+</div>
+<div class="detail-item">
+<span class="emoji">📍</span>
+<span class="text address">
+<span class="label">Adresse:</span><br>
+                   Marienstrasse 3, 49716 Meppen
+</span>
+</div>
+</div>
+<a href="hans-deutmeyer.vcf" class="vcard-button" download>
+           ⬇️ Kontakt speichern (vCard)
+</a>
+<div class="hint">
+           Tipp: Ein Klick speichert die Visitenkarte direkt auf Ihrem Smartphone oder PC.
+</div>
+</div>
 </body>
 </html>
